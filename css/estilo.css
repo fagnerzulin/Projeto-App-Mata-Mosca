@@ -1,0 +1,91 @@
+html {
+    cursor: url("../img/mata_mosca.png") 30 30, auto;
+}
+body {
+    background: url("../img/bg2.jpg") #a9c519;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 767.98px) {
+    body {
+        background: url("../img/bg3.jpg") #a9c519;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .game {
+        max-width: 250px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 90%;
+    }
+    .inicio {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 90%;
+    }
+    .inicio img {
+        max-width: 250px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+    }
+    #nivel {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .game {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 90%;
+    }
+    .inicio {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 90%;
+    }
+}
+
+.mosca1 {
+    width: 50px;
+    height: 50px;
+}
+.mosca2 {
+    width: 70px;
+    height: 70px;
+}
+.mosca3 {
+    width: 100px;
+    height: 100px;
+}
+
+.ladoA {
+    transform: scaleX(1);
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
